@@ -12,11 +12,11 @@ public class SimpleCalculator {
         double m = in.nextDouble();
         
         System.out.print("Enter an operator (+, -, *, /): ");
-        char op = in.next().charAt(0);
+        char operation = in.next().charAt(0);
         
         double res = 0.0;
 
-        switch (op) {
+        switch (operation) {
             case '+':
                 res = n + m;
                 break;
@@ -36,7 +36,7 @@ public class SimpleCalculator {
                 }
                 break;
             default:
-                System.out.println("Invalid op.");
+                System.out.println("Invalid operation.");
                 in.close();
                 return;
         }
